@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "newssimplify"
+version = "0.1.0"
+description = "A simple AI agent demonstrating Llama LLM tools calling ability and invoking them whenever required."
+authors = ["ArnabChand <arnabchand.1311@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+newspaper4k = "^0.9.3.1"
+selenium = "^4.27.1"
+duckduckgo-search = "^6.3.7"
+python-dotenv = "^1.0.1"
+groq = "^0.13.1"
+streamlit = "^1.41.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
