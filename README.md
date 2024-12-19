@@ -1,6 +1,6 @@
 # 📰 NEWSimplify
 
-**NEWSimplify** is a Python-based news assistant project that demonstrates the integration of custom tools and their invocation by the Llama 3.1-70B large language model. The assistant fetches and summarizes the latest news articles on any topic of interest using a chat-based interface.
+**NEWSimplify** is a an AI-powered news assistant built using Python and seamlessly integrating custom tools with the powerful Llama 3.1-70B large language model (LLM). This smart AI agent fetches and summarizes the latest news articles on any topic of interest, offering users a dynamic, chat-based interface for effortless interaction and real-time insights.
 
 ## 🌟 Key Features
 - **Custom Tools Integration**: Demonstrates custom functions for:
