@@ -62,6 +62,7 @@ This project uses the following libraries:
 - **selenium**: For web scraping and article extraction.
 - **python-dotenv**: To manage environment variables securely.
 - **groq**: API library to interact with the Llama 3.1-70B model.
+- **newspaper4k**: For extracting news article
 
 ## 💡 Project Files Overview
 - `newsimplify.py`: Main script handling the assistant logic and Streamlit UI.
@@ -71,6 +72,9 @@ This project uses the following libraries:
 - `pyproject.toml`: Poetry configuration file for dependency management.
 
 ## 🧪 Example Usage
+Here's how the NEWSimplify assistant works in action:
+
+![Example Usage](assets/Demo.gif)
 
 
 ## 🎯 Objective
