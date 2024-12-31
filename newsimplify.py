@@ -50,10 +50,10 @@ def format_tool_output(tool_output):
     else:
         return str(tool_output)
 
-# Function to interact with the Llama 3.1-70B LLM (Groq API)
+# Function to interact with the Llama 3.3-70B LLM (Groq API)
 def LLMinf(messages):
     completion = client.chat.completions.create(
-        model="llama-3.1-70b-versatile",
+        model="llama-3.3-70b-versatile",
         messages=messages,
         temperature=1,
         max_tokens=1024,
@@ -74,8 +74,8 @@ def initialize_session_state():
         system_prompt = (
         "Environment: python\n"
         "Tools: search_web, extract_article\n"
-        "Cutoff Knowledge Date: October 2023\n"
-        "Current Date: 2 December 2024\n"
+        "Cutoff Knowledge Date: December 2023\n"
+        "Current Date: 30 December 2024\n"
         "\n"
         "# Tool Instructions\n"
         "- When the user provides a topic, use the function 'search_web' to fetch the top 3 news articles.\n"
@@ -101,7 +101,8 @@ def initialize_session_state():
         "- Put the entire function call reply on one line.\n"
         "- After receiving the tool output, proceed to the next step in the interaction flow.\n"
         "\n"
-        "You are a helpful assistant called NEWSimplify. Greet the user and ask for a topic they want to know more about."
+        "You are a helpful assistant called NEWSimplify. Greet the user and ask for a topic they want to know more about.\n"
+        "Do NOT call any tool until the user provide a topic."
     )
         st.session_state.messages = [{"role": "system", "content": system_prompt}]
         st.session_state.articles_list = []
